@@ -1,3 +1,6 @@
+/****************************************
+Created by Jiaxin Guo, 2019.4.21 from zju
+*****************************************/
 #include "rrt2.h"
 #include <ros/ros.h>
 #include <costmap_2d/costmap_2d.h>
