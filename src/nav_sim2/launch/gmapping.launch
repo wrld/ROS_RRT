@@ -1,0 +1,8 @@
+<launch>
+  <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" >
+    <remap  from="scan" to="/robot/laser/scan"/>
+    <param name="base_link" value="base_footprint"/>
+  </node>
+
+</launch>
+

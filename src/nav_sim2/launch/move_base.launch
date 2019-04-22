@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <include file="$(find amcl)/examples/amcl_diff.launch" >
+  </include> 
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+
+    <param name="controller_frequency" value="10.0"/>
+    <param name="controller_patiente" value="15.0"/>
+
+     <rosparam file="$(find nav_sim)/cfg/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find nav_sim)/cfg/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find nav_sim)/cfg/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find nav_sim)/cfg/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find nav_sim)/cfg/new.yaml" command="load" />
+    <rosparam file="$(find nav_sim)/cfg/base_local_planner_params.yaml" command="load" />
+
+    <!-- Global Planner in ROS -->
+    <param name="base_global_planner" value="rrt_plan/rrt_planner2" />
+    
+	<!-- TASK Please complete the global planner using API of ROS-->
+	<!--rosparam file="$(find nav_sim)/cfg/your_name.yaml" command="load" /-->
+	<!--XXXXXXXXXX UP XXXXXXXXXX-->
+
+  </node>
+  
+</launch>

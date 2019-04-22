@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+  <name>rrt_planner</name>
+  <version>0.0.0</version>
+  <description>The rrt_planner package</description>
+
+  <maintainer email="974186763@qq.com">gjx</maintainer>
+
+ <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>nav_core</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>costmap_2d</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>nav_core</run_depend>
+  <run_depend>pluginlib</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>costmap_2d</run_depend>
+  <export>
+  <nav_core plugin="${prefix}/rrt_planner_plugin.xml"/>
+  </export>
+
+</package>

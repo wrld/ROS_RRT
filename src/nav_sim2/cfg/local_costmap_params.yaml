@@ -1,0 +1,17 @@
+local_costmap:
+  global_frame: map
+  robot_base_frame: base_footprint
+  update_frequency: 5.0
+  publish_frequency: 5.0
+  static_map: false
+  rolling_window: true
+  use_dijkstra: False
+  width: 5.0
+  height: 5.0
+  resolution: 0.05
+  tranform_tolerance: 1.0
+  planner_frequency: 1.0
+  planner_patiente: 5.0
+#plugins:
+# {name: obstacles, type: "costmal_2d::ObstacleLayer",
+# name: inflation, type: "costmal_2d::InflationLayer"}

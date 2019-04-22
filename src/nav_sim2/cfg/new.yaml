@@ -1,0 +1,13 @@
+rrt_planner2:
+    iteration_: 5000
+    sample_num_: 50
+    extend_step_: 0.15
+    distance_: 0.1
+    extend_check: 0.001
+    probability_: 0.5
+    starR: 8
+    choice: 2
+    smooth: 1
+    threshold_: 28
+    gravity: 1
+    grav: 0.3
